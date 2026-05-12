@@ -1,0 +1,37 @@
+## Ignore Visual Studio temporary files
+.vs/
+
+## Ignore build folders
+bin/
+obj/
+
+## Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignore Rider/ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+## Ignore logs
+*.log
+
+## Ignore published output
+publish/
+
+## Ignore SQLite/local DB files if desired
+*.db
+*.db-shm
+*.db-wal
+
+## Ignore node modules if ever added
+node_modules/
+
+## Ignore secrets/config overrides
+appsettings.Development.json
+
+## Ignore OS files
+.DS_Store
+Thumbs.db

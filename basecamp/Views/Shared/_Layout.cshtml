@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - basecamp</title>
+    <!-- Loads Bootstrap's built-in CSS so we can use Bootstrap classes like navbar, container, nav-link, etc. -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Loads your main custom site-wide CSS file. This is where most Basecamp styling will go. -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <!-- Loads auto-generated project styling from ASP.NET. The asp-append-version helps prevent browser cache issues. -->
+    <link rel="stylesheet" href="~/basecamp.styles.css" asp-append-version="true" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="~/images/basecamp-logo.jpg" />
+</head>
+<body>
+    <header>
+        <!-- Main navigation bar shown at the top of every page because this file is the shared layout. -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+
+                <!-- Site brand/logo area. Clicking this sends users back to the Home page. -->
+                <a class="navbar-brand d-flex align-items-center gap-2"
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    <img src="~/images/basecamp-logo.jpg"
+                         alt="Basecamp logo"
+                         class="site-logo" />
+
+                    <span>Basecamp</span>
+                </a>
+
+                <!-- Mobile hamburger button. This appears when the screen is too small for the full nav menu. -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible navigation menu. Bootstrap hides/shows this on smaller screens. -->
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Each nav item uses ASP.NET tag helpers to link to a controller/action route. -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="FoodDrinks" asp-action="Index">Food & Drinks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Casino" asp-action="Index">Casino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Hotel" asp-action="Index">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Events" asp-action="Index">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Gallery" asp-action="Index">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Contact" asp-action="Index">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main page content wrapper.
+    Removed Bootstrap container so homepage hero can span full width.
+    Individual pages still control their own spacing using section containers. -->
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <!-- Site-wide footer shown at the bottom of every page. -->
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - basecamp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- Loads jQuery, Bootstrap JavaScript, and your custom site JavaScript. -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Allows individual pages to inject extra scripts only when needed. -->
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
