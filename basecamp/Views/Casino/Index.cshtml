@@ -2,15 +2,64 @@
     ViewData["Title"] = "Casino";
 }
 
-<section class="container py-5 text-light">
-    <h1>Casino</h1>
+<section class="container py-5 text-light casino-page">
+    <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+            <p class="section-eyebrow">Gaming at Basecamp</p>
 
-    <div class="placeholder-img mt-4">
-        Casino Area Photo Placeholder
+            <h1 class="display-5 fw-bold mb-3">
+                Casino
+            </h1>
+
+            <p class="lead text-light">
+                Grab a drink, settle in, and try your luck on Montana gaming machines in a relaxed mountain lodge atmosphere.
+            </p>
+
+            <p>
+                Whether you're stopping in for a cold beer, meeting friends, or chasing a little luck,
+                Basecamp offers a comfortable gaming area with several machines and a variety of games.
+            </p>
+
+            <a asp-controller="Contact"
+               asp-action="Index"
+               class="btn btn-warning btn-sm mt-3">
+                Stop In & Play
+            </a>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="casino-photo-placeholder">
+                Casino Area Photo Coming Soon
+            </div>
+        </div>
     </div>
 
-    <p class="mt-4">
-        Whether you're stopping in for a cold beer or chasing a little luck, Basecamp offers several machines with a variety of games in a comfortable gaming 
-        enviornment.
-    </p>
+    <div class="row g-4 mt-5">
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Montana Gaming</h2>
+                <p class="mb-0">
+                    Enjoy a variety of gaming machines in a comfortable, casual setting.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Drinks Nearby</h2>
+                <p class="mb-0">
+                    Pair your gaming with a cold drink from the bar and settle in for a good time.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Relaxed Atmosphere</h2>
+                <p class="mb-0">
+                    No pressure, no rush — just a laid-back Basecamp experience in Seeley Lake.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>

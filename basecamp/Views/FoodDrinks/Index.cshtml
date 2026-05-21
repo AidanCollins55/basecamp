@@ -2,14 +2,70 @@
     ViewData["Title"] = "Food & Drinks";
 }
 
-<section class="container py-5 text-light">
-    <h1>Food & Drinks</h1>
+<section class="container py-5 text-light food-page">
+    <div class="row align-items-center g-5">
 
-    <div class="placeholder-img mt-4">
-        Food & Drinks Photo Placeholder
+        <div class="col-lg-6">
+            <p class="section-eyebrow">Good Food & Cold Drinks</p>
+
+            <h1 class="display-5 fw-bold mb-3">
+                Food & Drinks
+            </h1>
+
+            <p class="lead text-light">
+                Whether you're stopping in for lunch, dinner, a late-night bite, or drinks with friends,
+                Basecamp offers a welcoming atmosphere and classic favorites.
+            </p>
+
+            <p>
+                Enjoy loaded nachos, hot pizza, cold beer, cocktails, and more while relaxing in our
+                mountain lodge setting. Whether you're here to watch the game, meet up with friends,
+                or unwind after a day in Seeley Lake, there's always a seat waiting for you.
+            </p>
+
+            <a asp-controller="Contact"
+               asp-action="Index"
+               class="btn btn-warning btn-sm mt-3">
+                Visit Basecamp
+            </a>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="food-photo-placeholder">
+                Food & Drinks Photo Coming Soon
+            </div>
+        </div>
+
     </div>
 
-    <p class="mt-4">
-        Loaded nachos, hot pizza, and cold drinks served in a welcoming local setting.
-    </p>
+    <div class="row g-4 mt-5">
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Pizza & Favorites</h2>
+                <p class="mb-0">
+                    Hot pizza, loaded nachos, and satisfying pub-style favorites served throughout the day.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Beer & Cocktails</h2>
+                <p class="mb-0">
+                    Ice-cold beer, cocktails, and your favorite drinks ready whenever you're in the mood.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Local Atmosphere</h2>
+                <p class="mb-0">
+                    A relaxed gathering place for locals and travelers alike in the heart of Seeley Lake.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>

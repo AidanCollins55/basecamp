@@ -2,14 +2,108 @@
     ViewData["Title"] = "Hotel";
 }
 
-<section class="container py-5 text-light">
-    <h1>Hotel</h1>
+<section class="container py-5 text-light hotel-page">
 
-    <img src="~/images/hotel-exterior.jpg"
-         alt="Basecamp hotel room"
-         class="img-fluid rounded shadow mt-4 hotel-room-img" />
+    <div class="row align-items-center g-5">
 
-    <p class="mt-4">
-        Comfortable lodging right here at Basecamp for travelers and locals alike.
-    </p>
+        <div class="col-lg-6">
+            <p class="section-eyebrow">Stay at Basecamp</p>
+
+            <h1 class="display-5 fw-bold mb-3">
+                Hotel
+            </h1>
+
+            <p class="lead text-light">
+                Comfortable lodging in the heart of Seeley Lake, with convenient access
+                to everything Basecamp has to offer.
+            </p>
+
+            <p>
+                Whether you're visiting for outdoor recreation, passing through town,
+                or spending the evening at Basecamp, our rooms give you a convenient
+                place to relax, recharge, and stay close to the action.
+            </p>
+
+            <a asp-controller="Contact"
+               asp-action="Index"
+               class="btn btn-warning btn-sm mt-3">
+                Contact Us About Availability
+            </a>
+        </div>
+
+        <div class="col-lg-6">
+            <div id="hotelCarousel" class="carousel slide hotel-carousel shadow" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Room photo 1"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1" aria-label="Room photo 2"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2" aria-label="Room photo 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <div class="hotel-carousel-placeholder">
+                            Hotel Room Photo Coming Soon
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="hotel-carousel-placeholder">
+                            Hotel Room Photo Coming Soon
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="hotel-carousel-placeholder">
+                            Hotel Room Photo Coming Soon
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mt-5">
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Comfortable Rooms</h2>
+                <p class="mb-0">
+                    A simple, comfortable place to unwind after a long day in Seeley Lake.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Everything Nearby</h2>
+                <p class="mb-0">
+                    Stay close to food, drinks, gaming, and the relaxed Basecamp atmosphere.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-card h-100">
+                <h2 class="h5">Local Adventure</h2>
+                <p class="mb-0">
+                    A convenient home base for exploring Seeley Lake, nearby trails, water, and mountain recreation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
 </section>
