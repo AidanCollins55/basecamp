@@ -4,7 +4,7 @@
 
 <!-- HERO SECTION -->
 <section class="hero-section text-light d-flex align-items-center"
-    style="background-image: url('/images/basecamp-hero.jpg');">
+         style="background-image: url('/images/basecamp-hero.jpg');">
     <div class="container text-center">
         <h1 class="display-3 fw-bold">Basecamp</h1>
         <p class="lead">Bar • Casino • Hotel</p>
@@ -29,14 +29,18 @@
     <a asp-controller="FoodDrinks" asp-action="Index" class="content-panel-link">
         <div class="row align-items-center content-panel">
             <div class="col-md-6">
-                <div class="placeholder-img">Food & Drinks Photo</div>
+                <img src="~/images/menu.jpg"
+                     alt="Basecamp Food & Drinks"
+                     class="img-fluid rounded shadow home-section-img" />
             </div>
+
             <div class="col-md-6">
                 <h2>Food & Drinks</h2>
                 <p>
                     Loaded nachos, hot pizza, cold beer, and everything you need
                     for a relaxed night with friends.
                 </p>
+
                 <span class="btn btn-outline-light">
                     View Menu
                 </span>
@@ -46,45 +50,61 @@
 
     <a asp-controller="Casino" asp-action="Index" class="content-panel-link">
         <div class="row align-items-center content-panel flex-md-row-reverse">
+
             <div class="col-md-6">
                 <img src="~/images/casino-photo1.jpg"
                      alt="Basecamp Casino"
                      class="img-fluid rounded shadow home-section-img" />
             </div>
+
             <div class="col-md-6">
                 <h2>Casino</h2>
+
                 <p>
                     Enjoy Montana gaming machines in a laid-back lodge atmosphere.
                 </p>
+
                 <span class="btn btn-outline-light">
                     Learn More
                 </span>
             </div>
+
         </div>
     </a>
 
     <a asp-controller="Hotel" asp-action="Index" class="content-panel-link">
         <div class="row align-items-center content-panel">
+
             <div class="col-md-6">
-                <div class="placeholder-img">Hotel Rooms Photo</div>
+                <img src="~/images/hotel-room1.jpg"
+                     alt="Basecamp Hotel Room"
+                     class="img-fluid rounded shadow home-section-img" />
             </div>
+
             <div class="col-md-6">
                 <h2>Stay the Night</h2>
+
                 <p>
                     Comfortable lodging right here at Basecamp. Perfect after a
                     long day on the river, trail, or road.
                 </p>
+
                 <span class="btn btn-outline-light">
                     View Rooms
                 </span>
             </div>
+
         </div>
     </a>
 
     <div class="row align-items-center content-panel flex-md-row-reverse">
+
         <div class="col-md-6">
-            <div class="placeholder-img">Front Entrance Photo</div>
+            <img src="~/images/basecamp-exterior.jpg"
+                 alt="Basecamp Exterior"
+                 class="img-fluid rounded shadow home-section-img" />
         </div>
+
         <div class="col-md-6">
             <h2>Hours & Location</h2>
 
@@ -95,6 +115,7 @@
 
             <p class="mb-2">
                 <strong>Bar & Casino:</strong><br />
+                Tuesday - Sunday<br />
                 11:00 AM – 2:00 AM
             </p>
 
@@ -105,10 +126,13 @@
                 </a>
             </p>
 
-            <a asp-controller="Contact" asp-action="Index" class="btn btn-outline-light">
+            <a asp-controller="Contact"
+               asp-action="Index"
+               class="btn btn-outline-light">
                 Get Directions
             </a>
         </div>
+
     </div>
 
 </section>

@@ -24,6 +24,23 @@
                 place to relax, recharge, and stay close to the action.
             </p>
 
+            <div class="contact-card mt-4">
+                <h2 class="h5 mb-3">Room Rates</h2>
+
+                <p class="mb-2">
+                    <strong>$149.00 per night</strong>
+                </p>
+
+                <p class="mb-2">
+                    Plus applicable Montana lodging taxes.
+                </p>
+
+                <p class="mb-0">
+                    Pet-friendly accommodations available for an additional
+                    <strong>$35 pet fee</strong>.
+                </p>
+            </div>
+
             <a asp-controller="Contact"
                asp-action="Index"
                class="btn btn-warning btn-sm mt-3">
@@ -35,32 +52,72 @@
             <div id="hotelCarousel" class="carousel slide hotel-carousel shadow" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Hotel exterior"></button>
-                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1" aria-label="Hotel room"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="5"></button>
                 </div>
 
                 <div class="carousel-inner rounded">
 
+                    <!-- Exterior -->
                     <div class="carousel-item active">
-                        <img src="~/images/hotel-exterior.jpg?v=2"
+                        <img src="~/images/hotel-exterior.jpg"
                              class="d-block w-100 hotel-carousel-img"
-                             alt="Basecamp hotel exterior" />
+                             alt="Basecamp Hotel Exterior" />
                     </div>
 
+                    <!-- Entry -->
                     <div class="carousel-item">
-                        <img src="~/images/hotel-room.jpg?v=2"
+                        <img src="~/images/hotel-entry.jpg"
                              class="d-block w-100 hotel-carousel-img"
-                             alt="Basecamp hotel room" />
+                             alt="Basecamp Hotel Entry" />
+                    </div>
+
+                    <!-- Hallway -->
+                    <div class="carousel-item">
+                        <img src="~/images/hotel-hallway.jpg"
+                             class="d-block w-100 hotel-carousel-img"
+                             alt="Basecamp Hotel Hallway" />
+                    </div>
+
+                    <!-- Room 1 -->
+                    <div class="carousel-item">
+                        <img src="~/images/hotel-room1.jpg"
+                             class="d-block w-100 hotel-carousel-img"
+                             alt="Basecamp Hotel Room" />
+                    </div>
+
+                    <!-- Room 2 -->
+                    <div class="carousel-item">
+                        <img src="~/images/hotel-room2.jpg"
+                             class="d-block w-100 hotel-carousel-img"
+                             alt="Basecamp Hotel Room" />
+                    </div>
+
+                    <!-- Bathroom -->
+                    <div class="carousel-item">
+                        <img src="~/images/hotel-bathroom.jpg"
+                             class="d-block w-100 hotel-carousel-img"
+                             alt="Basecamp Hotel Bathroom" />
                     </div>
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#hotelCarousel"
+                        data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#hotelCarousel"
+                        data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>

@@ -80,9 +80,97 @@
     </main>
 
     <!-- Site-wide footer shown at the bottom of every page. -->
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - basecamp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="site-footer text-light">
+        <div class="container py-5">
+            <div class="row g-4 align-items-start">
+
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <img src="~/images/basecamp-logo.jpg"
+                             alt="Basecamp logo"
+                             class="footer-logo" />
+
+                        <div>
+                            <h2 class="h5 mb-1">Basecamp</h2>
+                            <p class="mb-0 footer-muted">Bar • Casino • Hotel</p>
+                        </div>
+                    </div>
+
+                    <p class="footer-muted mb-0">
+                        A relaxed mountain-town stop in Seeley Lake for drinks, gaming,
+                        food, lodging, and local atmosphere.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="h6 footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="FoodDrinks" asp-action="Index">Food & Drinks</a></li>
+                        <li><a asp-controller="Casino" asp-action="Index">Casino</a></li>
+                        <li><a asp-controller="Hotel" asp-action="Index">Hotel</a></li>
+                        <li><a asp-controller="Events" asp-action="Index">Events</a></li>
+                        <li><a asp-controller="Gallery" asp-action="Index">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h3 class="h6 footer-heading">Visit</h3>
+
+                    <p class="footer-muted mb-2">
+                        3363 MT-83<br />
+                        Seeley Lake, MT 59868
+                    </p>
+
+                    <p class="footer-muted mb-2">
+                        Tuesday – Sunday<br />
+                        11am – 2am
+                    </p>
+
+                    <p class="footer-muted mb-0">
+                        Closed Monday
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h3 class="h6 footer-heading">Contact</h3>
+
+                    <p class="mb-2">
+                        <a href="tel:14066772848">(406) 677-2848</a>
+                    </p>
+
+                    <p class="mb-3">
+                        <a href="https://www.facebook.com/profile.php?id=61587695232047"
+                           target="_blank"
+                           rel="noopener">
+                            Follow us on Facebook
+                        </a>
+                    </p>
+
+                    <a asp-controller="Contact"
+                       asp-action="Index"
+                       class="btn btn-warning btn-sm">
+                        Get Directions
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider" />
+
+            <div class="d-flex flex-column flex-md-row justify-content-between gap-2 footer-bottom">
+                <p class="mb-0">
+                    &copy; @DateTime.Now.Year Basecamp. All rights reserved.
+                </p>
+
+                <p class="mb-0">
+                    <a href="https://www.codebycollins.com/"
+                       target="_blank"
+                       rel="noopener">
+                        Website by CodeByCollins
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
 
