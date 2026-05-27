@@ -169,7 +169,7 @@ a {
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)), url('/images/basecamp-hero.jpg');
     background-size: cover;
-    background-position: center 15%;
+    background-position: center 60%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -662,4 +662,21 @@ body {
     object-position: center 30%;
     border-radius: 18px;
     box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+.brewpub-logo-img {
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #111;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+@media (max-width: 768px) {
+    .brewpub-logo-img {
+        height: 260px;
+        padding: 18px;
+    }
 }
