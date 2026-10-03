@@ -167,7 +167,7 @@ a {
 
 .hero-section {
     height: 50vh;
-    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)), url('/images/basecamp-hero.jpg');
+    background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.45)), url('/images/basecamp-hero.jpg');
     background-size: cover;
     background-position: center 60%;
     background-repeat: no-repeat;
@@ -181,15 +181,76 @@ a {
 ========================================= */
 
     .hero-section h1 {
-        letter-spacing: 4px;
-        font-size: 4rem;
-        text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9),
+        0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section .lead,
+.hero-section p {
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.95),
+        0 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section .lead {
+    font-size: 1.3rem;
+    color: var(--basecamp-muted);
+}
+
+/* =========================
+   ANNOUNCEMENT BANNER
+   ========================= */
+
+.announcement-banner {
+    background: linear-gradient( 90deg, #9f8a68, #cdbb9a, #9f8a68 );
+    padding: 14px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.announcement-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+.announcement-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.announcement-message {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+    .announcement-content {
+        flex-direction: column;
+        gap: 6px;
     }
 
-    .hero-section .lead {
-        font-size: 1.3rem;
-        color: var(--basecamp-muted);
+    .announcement-message {
+        font-size: 1rem;
     }
+}
 /* =========================================
    CONTENT PANEL STYLING
    Gives homepage sections a lodge-style card surface
